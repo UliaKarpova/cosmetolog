@@ -1,0 +1,388 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.blue {
+    background: rgba(190, 210, 217, 0.2);
+}
+.brown {
+    background: rgba(204, 169, 150, 0.2);
+}
+
+.peach {
+    background: rgba(231, 174, 165, 0.2);
+}
+
+.main {    
+    position: relative;
+    border: 1px solid rgb(152, 148, 148);
+    max-width: 1240px;
+    margin: 64px auto;
+    padding: 64px 105px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    z-index: -1;
+}
+
+.block {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+}
+
+.first-block {
+    display: grid;
+    row-gap: 0;
+    column-gap: 48px;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: repeat(2, fit-content);
+    grid-template-areas:
+      "img text"
+      "img list"
+}
+
+.margin-top24 {
+    margin-top: 24px;
+}
+
+.margin-left24 {
+    margin-left: 24px;
+}
+
+.margin-bottom24 {
+    margin-bottom: 24px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 505px;
+}
+
+.first-info {
+    height: fit-content;
+}
+
+.photo {
+    position: relative;
+    width: 100%;
+    max-width: 505px;
+    object-fit: cover;
+    max-height: 642px;
+    height: inherit;
+    z-index: 2;
+}
+
+.first-photo {
+    width: 400px;
+    height: 570px;
+    float: right;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    grid-area: img;
+}
+
+
+.first-info {
+    grid-area: text;
+}
+
+.first-text {
+    max-width: 586px;
+    margin-left: 24px;
+}
+
+.first-list {
+    grid-area: list;
+}
+
+.video {
+    position: relative;
+    height: fit-content;
+    z-index: 2;
+}
+
+
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    font-family: 'Noto Serif', 'Arial', sans-serif;
+}
+
+.text {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-top: 24px; 
+}
+
+.list {
+    margin-top: 24px;
+    margin-left: 24px;
+}
+
+.item {
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.right-side {
+    padding-left: 24px;
+}
+
+.no-top-margin {
+    margin-top: 0;
+}
+
+.table {
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: -24px;
+}
+
+.table-blue {
+    background-color: rgba(217, 228, 232, 1);
+    margin-top: 24px;
+}
+
+.table-brown {
+    background-color: rgba(204, 169, 150, 0.4);
+}
+
+.table-top {
+    background-color: rgba(231, 174, 165, 0.4);
+    margin-top: 24px;
+}
+
+.table-bottom {
+    background-color: rgba(231, 174, 165, 0.2);
+}
+
+.table-bottom-blue {
+    background-color: rgba(217, 228, 232, 0.5);
+}
+
+.table-bottom-brown {
+    background-color: rgba(204, 169, 150, 0.2);
+}
+
+.kinezio__price {
+    text-align: right;
+}
+
+.button {
+    height: 40px;
+    width: 296px;
+    margin-left: calc(100% / 2 - 148px);
+    border: none;
+    border-radius: 20px;
+    margin-top: 24px;
+}
+
+.blue-BTN {
+    background-color: rgba(190, 210, 217, 1);
+}
+
+.peach-BTN {
+    background-color: rgba(231, 174, 165, 0.4);
+}
+
+.brown-BTN {
+    background-color: rgba(204, 169, 150, 0.4);
+}
+
+.diploma-BTN {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.diploma {
+    object-fit: contain;
+    height: fit-content;
+}
+
+.link {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Raleway', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 64px auto ;
+    box-sizing: border-box;
+    height: 460px;
+    width: 100%;
+    max-width: 1238px;
+}
+
+.cards_item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    width: 295px;
+    text-decoration: none;
+}
+
+.cards_img {
+    width: 295px;
+    height: 316px;
+}
+
+.text_img {
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 24px;
+    font-family: 'Raleway';
+    margin-top: 24px;
+}
+
+.hi738 {
+    max-height: 738px;
+}
+
+.hi368 {
+    max-height: 368px;
+}
+
+.hi426 {
+    height: 426px;
+}
+
+.note {
+    font-family: 'Raleway';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+}
+
+@media (max-width: 600px) {
+    
+    .main {
+        margin: 20px 8px;
+        padding: 20px;
+        position: relative;
+    }
+
+    .block {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    /*.first-block {
+        grid-template-areas:
+        "img text"
+        "i list"    }*/
+
+    .first-photo {
+        width: inherit;
+        height: 100%;
+        
+    }
+
+    .info {
+        margin-left: 0;
+    }
+
+    .title {
+        font-size: 12px;
+        line-height: 10px;
+        margin-right: -3px;
+    }
+
+    .text {
+        font-size: 10px;
+        line-height: 16px;
+        margin-top: 8px;
+    }
+
+    .list {
+        margin-top: 8px;
+        margin-left: 16px;
+    }
+
+    .item {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    
+    .margin-left150 {
+        margin-left: 150px;
+    }
+
+    .margin-top30 {
+        margin-top: 30px;
+    }
+
+    .video {
+        width: 100%;
+    }
+    .margin-left24 {
+        margin-left: 0;
+    }
+
+    .right-side {
+        padding-left: 0;
+    }
+
+    .diploma-BTN {
+        width: 190px;
+        height: 22px;
+        margin-top: 8px;
+    }
+
+
+    .link {
+        font-size: 10px;
+        line-height: 24px;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    .first-block {
+        row-gap: 0;
+        column-gap: 8px;
+        grid-template-columns: 142px auto;
+        grid-template-rows: 169px auto;
+        grid-template-areas:
+          "img text"
+          "list list"
+    }
+
+}
